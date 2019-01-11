@@ -1,4 +1,4 @@
-#PHP moodulid
+# PHP moodulid
 php moodulite installeerimiseks täiendasin faili /etc/apt/sources.list:
 ```
 deb http://packages.dotdeb.org jessie all
@@ -9,7 +9,7 @@ php7.0 mooduleid käsuga
 ```
 apt-get install php7.0-(moodul siia)
 ```
-#Mysql
+# Mysql
 
 Nüüd sai installida mysql
 Läksin /tmp kausta ning kasutasin käsku
@@ -32,7 +32,7 @@ Et sisselogida ilma paroolita pidi tegema root kodu kaustas faili
 user=root
 password=qwerty
 ```
-#Phpmyadmin
+# Phpmyadmin
 
 Nüüd sai installitud phpmyadmin käsuga
 ```
