@@ -74,7 +74,7 @@ Siis pidi sisestama oma lehekülje nime ehk minu puhul IP
 
 Peale seda sai kasutatud chmod käsku et anda load ssl kaustale
 
-Siis sai muudetud /etc/apache2/sites-enabled/default-ssl.conf faili (fail olemas praks3 kaustas)
+Siis sai muudetud /etc/apache2/sites-enabled/default-ssl.conf faili (fail olemas VSH kaustas)
 
 Ja HTTPS oligi olemas
 
