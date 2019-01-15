@@ -97,3 +97,4 @@ ning siis oli vaja privileege uuendada
 
 Peale seda oli wordpress valmis kasutamiseks ning seda üles seadistada leheküljelt "Minu.IP/wordpress"
 
+Töö lõpetamiseks pidin tegema uue VMi kuna eelmine oli vigane ning ma ei saanud toda kuidagi korda.
