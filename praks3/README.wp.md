@@ -47,3 +47,48 @@ Faili sisuks võis panna näiteks:
 ```
 
 Sellest on aru saada et kõik töötab
+
+
+# HTTPS installeerimine
+
+Esimese asjana oli vaja teha käsud
+```
+apt-get update
+apt-get upgrade openssl
+```
+Kui apache2 on juba olemas siis sai kasutada käske
+```
+a2enmod ssl
+a2ensite default-ssl
+```
+Peale seda sai taaskäivitatud apache2
+Tehtud sai kaust ssl asukohta /etc/apache2/ssl
+
+Peale seda pidi n.ö allkirjastama certificati käsuga:
+```
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
+```
+Nüüd täitsin väljad ära
+Kui ette tuli küsimus "Common name"
+Siis pidi sisestama oma lehekülje nime ehk minu puhul IP
+
+Peale seda sai kasutatud chmod käsku et anda load ssl kaustale
+
+Siis sai muudetud /etc/apache2/sites-enabled/default-ssl.conf faili (fail olemas praks3 kaustas)
+
+Ja HTTPS oligi olemas
+
+# Wordpress
+Wordpressi installeerimiseks sai mindud /var/www/html kausta ja kasutatud käske
+```
+wget http://wordpress.org/latest.zip
+apt install unzip
+unzip -q latest.zip
+```
+Nüüd sai antud wordpress kaustale kindlad load, et apache saaks neid kasutada
+MySQL-is sai tehtud uue andmebaasi nimega wordpress_sample
+Uus kasutaja: wp_user parooliga qwerty
+Kasutajale sai antud kõik privileegid
+ning siis oli vaja privileege uuendada
+Peale seda oli wordpress valmis kasutamiseks ning seda üles seadistada leheküljelt "Minu.IP/wordpress"
+
