@@ -86,9 +86,14 @@ apt install unzip
 unzip -q latest.zip
 ```
 Nüüd sai antud wordpress kaustale kindlad load, et apache saaks neid kasutada
+
 MySQL-is sai tehtud uue andmebaasi nimega wordpress_sample
+
 Uus kasutaja: wp_user parooliga qwerty
+
 Kasutajale sai antud kõik privileegid
+
 ning siis oli vaja privileege uuendada
+
 Peale seda oli wordpress valmis kasutamiseks ning seda üles seadistada leheküljelt "Minu.IP/wordpress"
 
