@@ -16,6 +16,11 @@ GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost ja 10.0.2.4';
 
 Andmebaas oli nüüd valmis
 
+Selle testimiseks sisestasin wordpressi serveril käsu:
+```
+mysql -u wpuser@10.0.2.6 -p
+```
+
 # Wordpressi server
 
 Wordpressi installeerimiseks oli vaja minna läbi tavalisest wordpressi installatsiooni protsessist
