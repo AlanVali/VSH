@@ -1,0 +1,28 @@
+# Andmebaasi server
+
+Andmebaasi paigaldamiseks oli vaja kasutada mariadb-serveri moodulit
+See sai installeeritud käskudega
+```
+apt-get install mariadb-server
+mysql_secure_installation
+```
+Peale seda oli vaja minna andmebaasi ning see ära seadistada, kui sees olin kasutasin käske:
+```
+CREATE DATABASE wordpress;
+CREATE USER 'wpuser'@'localhost' IDENTIFIED BY 'qwerty';
+CREATE USER 'wpuser'@'10.2.0.4' IDENTIFIED BY 'qwerty';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost ja 10.0.2.4';
+```
+
+Andmebaas oli nüüd valmis
+
+# Wordpressi server
+
+Wordpressi installeerimiseks oli vaja minna läbi tavalisest wordpressi installatsiooni protsessist
+
+Ennem oli muidugi vaja installeerida mariadb klient ja php mysql
+```
+apt-get install mariadb-client
+apt-get install php-mysql
+```
+
